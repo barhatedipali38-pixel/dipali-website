@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Work Samples</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* PROJECT SECTION */
+        .projects {
+            padding: 60px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .ppt { color: #d24726; }
+        .excel { color: #217346; }
+        .word { color: #2b579a; }
+
+        .project-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            padding: 10px 22px;
+            text-decoration: none;
+            color: white;
+            background: #2c5364;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .project-card a:hover {
+            background: #0f2027;
+        }
+
+        /* BACK BUTTON */
+        .back {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .back a {
+            text-decoration: none;
+            padding: 12px 30px;
+            background: #203a43;
+            color: white;
+            border-radius: 30px;
+            font-size: 15px;
+        }
+
+        .back a:hover {
+            background: #0f2027;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Projects</h1>
+    <p>PowerPoint • Excel • Word Work Samples</p>
+</header>
+
+<section class="projects">
+
+    <!-- PowerPoint Project -->
+    <div class="project-card">
+        <div class="icon ppt">📊</div>
+        <h3>PowerPoint Presentation</h3>
+        <p>Professional presentation with animations and clean design.</p>
+        <a href="https://docs.google.com/presentation/d/10FucVDJHIKmeCbbMsFTVmr5YufMyHFD5/edit?usp=drive_link&ouid=115696755396798959397&rtpof=true&sd=true target="_blank">View / Download</a>
+    </div>
+
+    <!-- Excel Project -->
+    <div class="project-card">
+        <div class="icon excel">📈</div>
+        <h3>Excel Spreadsheet</h3>
+        <p>Data analysis using formulas, charts, and tables.</p>
+        <a href="https://docs.google.com/spreadsheets/d/1Pl-XruUU2H-HJ40ert1T1YPtlziEmbLZ29pIrH9DGV4/edit?usp=drive_link" target="_blank">View / Download</a>
+    </div>
+
+    <!-- Word Project -->
+    <div class="project-card">
+        <div class="icon word">📄</div>
+        <h3>Word Document</h3>
+        <p>Formatted document with headings, tables, and styles.</p>
+        <a href="resume.pdf" target="_blank">View / Download</a>
+    </div>
+
+</section>
+
+<div class="back">
+    <a href="website.html">⬅ Back to Portfolio</a>
+</div>
+
+</body>
+</html>

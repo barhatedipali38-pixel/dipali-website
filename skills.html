@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Paintings & Sketches</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* GALLERY SECTION */
+        .gallery {
+            padding: 50px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .art-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .art-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .art-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .art-info h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .art-info p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* BACK BUTTON */
+        .back-btn {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .back-btn a {
+            text-decoration: none;
+            padding: 12px 28px;
+            background: #1d2671;
+            color: white;
+            border-radius: 30px;
+            font-size: 15px;
+            transition: background 0.3s;
+        }
+
+        .back-btn a:hover {
+            background: #c33764;
+        }
+    </style>
+</head>
+<body>
+
+    <header> 
+        <h1>Skills</h1>
+        <h2>My Paintings & Sketches</h2>
+        <p>Creativity through colors and pencils</p>
+    </header>
+
+    <section class="gallery">
+        <!-- ART 1 -->
+        <div class="art-card">
+            <img src="ganesha.jpg" alt="Sketch 1">
+            <div class="art-info">
+                <h3>Pencil Sketch</h3>
+                <p>Lord GANESHA</p>
+            </div>
+        </div>
+
+        <!-- ART 2 -->
+        <div class="art-card">
+            <img src="krishna.jpg" alt="Painting 1">
+            <div class="art-info">
+                <h3>Watercolor Painting</h3>
+                <p>shri krishna eyes</p>
+            </div>
+        </div> 
+        <!-- ART 3 -->
+        <div class="art-card">
+            <img src="pencilcolor.jpg" alt="Sketch 2">
+            <div class="art-info">
+                <h3>Pencil Colour Sketch</h3>
+                <p>Flower</p>
+            </div>
+        </div>
+
+        <!-- ART 4 -->
+        <div class="art-card">
+            <img src="nature.jpg" alt="Painting 2">
+            <div class="art-info">
+                <h3>Acrylic Painting</h3>
+                <p>Abstract Art</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-btn">
+        <a href="website.html">⬅ Back to Portfolio</a>
+    </div>
+
+</body>
+</html>
